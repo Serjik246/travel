@@ -11,6 +11,7 @@ textWrapper.forEach(elem => {
 });
 
 buttons.forEach((btn, index) => {
+  textWrapper[0].style.height = `${heightWrapper}px`;
   btn.addEventListener('click', () => {
     for(let i = 0; i < items.length; i += 1) {
       if (index === i) {
